@@ -1,0 +1,10 @@
+colcon build --packages-select birthday_comm
+source install/setup.bash
+
+# Terminal 1
+source install/setup.bash
+ros2 run birthday_comm birthday_publisher
+
+# Terminal 2
+source install/setup.bash
+ros2 run birthday_comm birthday_subscriber
