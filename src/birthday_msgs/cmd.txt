@@ -1,0 +1,2 @@
+colcon build --packages-select birthday_msgs
+source install/setup.bash
