@@ -1,3 +1,9 @@
 colcon build --packages-select urdfbot_description
 source install/setup.bash
 ros2 launch urdfbot_description urdf_visualize.launch.py
+
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+cd ~/ros2_ws
+source install/setup.bash
+rviz2 -d ~/ros2_ws/src/urdfbot_description/rviz/urdf_vis.rviz
